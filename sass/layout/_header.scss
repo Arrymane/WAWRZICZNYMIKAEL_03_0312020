@@ -1,5 +1,11 @@
 .headerlogo{
-    width:100%;
-    display: flex;
-    align-content: center;
+    text-align: center;
+    padding: 1rem 0 0 0;
+     &__img{
+         width: 12rem;
+         height: 3rem;
+     }
 }
+
+
+

@@ -2,3 +2,7 @@
     background-color: $primary-clr;
     @include btn;
 }
+.restaurants__card--tag{
+    border: 1px solid $tertiaire-color;
+    background-color: $tertiaire-color;
+}

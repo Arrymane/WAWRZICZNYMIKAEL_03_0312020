@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/6b32149860.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="public/css/style.css">
     <title>ohmyfood</title>
 </head>
 <body>
     <header>
-        <div class="headerlogo"><img src="images/logo/ohmyfood@2x.svg" alt="ohmyfood-logo"></div>
+        <div class="headerlogo"><img class="headerlogo__img"src="images/logo/ohmyfood@2x.svg" alt="ohmyfood-logo"></div>
     </header>
     <section class="reservation">
         <div class="reservation__local">
-            <i class="fas fa-map-marker-alt"></i>
+            <div class="reservation__local--fas"><i class="fas fa-map-marker-alt"></i></div>
             <p>Paris,Belleville</p>
         </div>
         <div class="reservation__search">
@@ -25,23 +25,25 @@
         </div>
     </section>
     <main class="main">
+        <div class="main__title">Fonctionnement</div>
         <section class="function">
             <div class="function__step">
-                <span>1</span>
-                <i class="fas fa-mobile-alt"></i>
+                <span class="function__step--number">1</span>
+                <div class="function__step--icon"><i class="fas fa-mobile-alt"></i></div>
                 <div class="function__step--title"><p>Choisissez un restaurant</p></div>
             </div>
             <div class="function__step">
-                <span>2</span>
-                <i class="fas fa-list-ul"></i>
+                <span class="function__step--number">2</span>
+                <div class="function__step--icon"><i class="fas fa-list-ul"></i></div>
                 <div class="function__step--title"><p>Composez votre menu</p></div>
             </div>
             <div class="function__step">
-                <span>3</span>
-                <i class="fas fa-store"></i>
+                <span class="function__step--number">3</span>
+                <div class="function__step--icon"><i class="fas fa-store"></i></div>
                 <div class="function__step--title"><p>Dégustez au restaurant</p></div>
             </div>
         </section>
+        <div class="main__title">Restaurants</div>
         <section class="restaurants">
             <div class="restaurants__card">
             <a href="lapalettedugoutmenu.html">

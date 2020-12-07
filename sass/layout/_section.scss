@@ -1,0 +1,71 @@
+.reservation{
+    flex-direction: column;
+    text-align: center;
+    background-color: $bg-secondary;
+        &__local{
+            width: 100%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $bg-icon;
+            box-shadow: 0px 3px 3px #73737338 inset;
+                &--fas{
+                    @include fas-icon;
+                }
+        }
+}
+.function{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 65px 0;
+}
+.function__step{
+    display: flex;
+    align-items: center;
+    width: 325px;
+    background-color: $bg-secondary;
+    border-radius: 1rem;
+    margin: 0 0 25px 0;
+        &--number{
+            @include function-number;
+        }
+}
+.function__step--title{
+    margin-left: 2rem;
+}
+.function__step--icon{
+    font-size: 20px;
+    color: #7e7e7e;
+}
+.main__title{
+    font-family: 'roboto',sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 4rem 0 2rem 1.2rem;
+}
+.restaurants{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    background-color: $bg-secondary;
+    @media (max-width: 601px){
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+}
+.restaurants__card{
+    display:grid;
+    @media (max-width:601px){
+    width:335px;
+    height: 250px;
+    border-radius: 0 0 2rem 2rem;
+    margin: 0 0 1.2rem 0;
+        &--img{
+            border-radius: 2rem 2rem 0 0;
+            width:335px;
+            height: 175px;
+        }
+        
+    }
+}
