@@ -1,0 +1,22 @@
+footer{
+    background-color: #353535;
+    font-family: 'roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 2.5rem 1rem;
+    font-size: 12px;
+}
+.footer__link{
+    margin: 0 0 10px 0;
+}
+.whiteicon{
+    color: white;
+}
+.footerlogo{
+    filter: invert(100%);
+    width: 105px;
+    height: 15px;
+    padding: 2rem 0 1.5rem 0;
+    margin: 0 0 0 -10px;
+
+}
