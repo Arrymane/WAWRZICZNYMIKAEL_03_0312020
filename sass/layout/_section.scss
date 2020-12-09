@@ -22,18 +22,6 @@
     padding: 0 0 65px 0;
     font-size: 1rem;
 }
-.function__step{
-    display: flex;
-    align-items: center;
-    width: 325px;
-    background-color: $bg-secondary;
-    border-radius: 1rem;
-    margin: 0 0 25px 0;
-    padding: 2rem 0 1.5rem 0;
-        &--number{
-            @include function-number;
-        }
-}
 .function__step--title{
     margin-left: 2rem;
 }
@@ -66,19 +54,19 @@
     }
 }
 .restaurants__card{
-    display:grid;
     position: relative;
     left: 1.2rem;
     right: 1.2rem;
+    background-color: white;
     @media (max-width:601px){
-    width:335px;
+    width: 335px;
     height: 250px;
     border-radius: 1.5rem ;
-    box-shadow: 3px 3px 3px $shadow;
+    box-shadow: 3px 8px 8px $shadow;
     margin: 0 0 3rem 0;
         &--img{
             border-radius: 1.5rem 1.5rem 0 0;
-            width:335px;
+            width: 335px;
             height: 175px;
             object-fit: cover;
         }
@@ -89,11 +77,13 @@
     position: relative;
     background-color: white;
     border-radius: 0 0 1.5rem 1.5rem;
+    padding-left:1rem; 
     height: 75px;
     
 }
 .restaurants__card--heart{
     position: absolute;
+    font-size: 24px;
     right: 1.5rem;
-    bottom: 2rem;
+    bottom: 1.5rem;
 }
