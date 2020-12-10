@@ -5,6 +5,7 @@ body{
 a{
     text-decoration: none;
     color:inherit;
+    grid-column-start: 2;
 }
 ul{
     list-style-type: none;
@@ -20,4 +21,15 @@ h4{
     margin:0;
     padding:0;
 }
+.function{
+    display:grid;
+    grid-template-columns: 1fr 90% 1fr;
+    padding: 0 0 65px 0;
+    font-size: 1rem;
+}
+.restaurants{
+    display:grid;
+    background-color: $bg-secondary;
+    grid-template-columns: 1fr 90% 1fr;
+    }
 

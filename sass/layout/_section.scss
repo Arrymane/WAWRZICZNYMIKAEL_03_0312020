@@ -15,65 +15,47 @@
                 }
         }
 }
-.function{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 0 65px 0;
-    font-size: 1rem;
-}
 .function__step--title{
+    grid-column-start: 2;
     margin-left: 2rem;
 }
 .function__step--icon{
+    grid-column-start: 2;
     font-size: 20px;
     color: #7e7e7e;
 }
-.main__function--title{
-    font-family: 'roboto',sans-serif;
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: 4rem 0 2rem 1.2rem;
-    background-color: white;
+.function--title{
+    grid-column-start: 2;
+    @include title;
 }
-.main__restaurant--title{
-    font-family: 'roboto',sans-serif;
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: 4rem 0 2rem 1.2rem;
+.restaurant--title{
+    grid-column-start: 2;
+    @include title;
     background-color: $bg-secondary;
-}
-.restaurants{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100%;
-    background-color: $bg-secondary;
-    @media (max-width: 601px){
-        grid-template-columns: 100%;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-    }
+    margin: 0;
 }
 .restaurants__card{
+    grid-column-start: 2;
     position: relative;
-    left: 1.2rem;
-    right: 1.2rem;
     background-color: white;
     @media (max-width:601px){
-    width: 335px;
+    width: 100%;
     height: 250px;
     border-radius: 1.5rem ;
     box-shadow: 3px 8px 8px $shadow;
     margin: 0 0 3rem 0;
         &--img{
             border-radius: 1.5rem 1.5rem 0 0;
-            width: 335px;
+            width: 100%;
             height: 175px;
             object-fit: cover;
+            grid-column-start: 2;
         }
         
     }
 }
 .restaurants__card--text{
+    grid-column-start: 2;
     position: relative;
     background-color: white;
     border-radius: 0 0 1.5rem 1.5rem;
@@ -86,4 +68,29 @@
     font-size: 24px;
     right: 1.5rem;
     bottom: 1.5rem;
+}
+.pagemenu__pict{
+    grid-column-start: 2;
+    max-width: 100%;
+    margin: 0 0 -30px 0;
+    object-fit: cover;
+}
+.pagemenu{
+    display: grid;
+    grid-template-columns: 1fr 90% 1fr;
+    background-color:$bg-secondary;
+    border: 1px solid black;
+    border-radius: 2rem 2rem 0 0;
+}
+.pagemenu__title{
+    grid-column-start: 2;
+}
+.menu{
+    grid-column-start: 2;
+}
+.btn__menu{
+    width: 190px;
+    grid-column-start: 2;
+    @include btn;
+
 }

@@ -3,9 +3,10 @@
     @include btn;
 }
 .function__step{
+    grid-column-start: 2;
     display: flex;
     align-items: center;
-    width: 325px;
+    width: 100%;
     background-color: $bg-secondary;
     border-radius: 2rem;
     margin: 0 0 25px 0;
@@ -14,9 +15,12 @@
         &--number{
             @include function-number;
         }
-    &:active{
+    &:hover{
         background-color: $primary-clr-lighten;
-        color:$primary-clr;
+        color:black;
+            .function__step--icon{
+                color:$primary-clr;
+            }
     }
 }
 .restaurants__card--tag{
