@@ -1,18 +1,15 @@
 .btn{
     background-color: $primary-clr;
+    margin: 2rem 0 3.5rem 0;
     @include btn;
 }
 .function__step{
-    grid-column-start: 2;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    background-color: $bg-secondary;
-    border-radius: 2rem;
+    display:flex;
     margin: 0 0 25px 0;
     padding: 1.8rem 0 1.3rem 0;
-    box-shadow: 3px 3px 10px $shadow;
-        &--number{
+    background-color: $bg-secondary;
+    @include function-card;
+         &--number{
             @include function-number;
         }
     &:hover{
@@ -31,5 +28,11 @@
     position: absolute;
     top: 12px;
     right: 10px;  
+
+}
+.btn__menu{
+    width: 190px;
+    grid-column-start: 2;
+    @include btn;
 
 }

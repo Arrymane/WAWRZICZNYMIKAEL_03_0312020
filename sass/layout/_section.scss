@@ -18,6 +18,8 @@
 .function__step--title{
     grid-column-start: 2;
     margin-left: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
 }
 .function__step--icon{
     grid-column-start: 2;
@@ -79,18 +81,52 @@
     display: grid;
     grid-template-columns: 1fr 90% 1fr;
     background-color:$bg-secondary;
-    border: 1px solid black;
-    border-radius: 2rem 2rem 0 0;
 }
 .pagemenu__title{
-    grid-column-start: 2;
+    position: relative;
+    border-radius: 1.5rem 1.5rem 0 0;
+    padding:2.4rem 0 0 1rem;
+    margin:0;
+    background-color: $bg-secondary;
 }
+.restaurants__heart{
+    position: absolute;
+    top:2.5rem;
+    right: 2.4rem;
+    font-size: 1.5rem;
+}
+
 .menu{
     grid-column-start: 2;
 }
-.btn__menu{
-    width: 190px;
+.menu__title{
+    padding: 2.5rem 0 0 0.5rem;
+    font-size: 1rem;
+     &--underline{
+         width:2.5rem;
+         border-top: 3px solid $tertiaire-clr;
+         margin: 0.5rem 0 0 0.5rem;
+     }
+}
+.menu__desc{
+    background-color:white;
+    flex-direction: column;
+   align-content: flex-start;
+   height: 70px;
+   padding: 0 0 12px 0;
+   margin: 1rem 0 12px 0;
+    @include function-card;
+     &--title{
+         padding: 0 0 0 12px;
+     }
+     &--subtitle{
+         display: flex;
+         justify-content: space-between;
+         padding: 0 1.5rem 0 12px;
+     }
+}
+.btn__menu--block{
     grid-column-start: 2;
-    @include btn;
-
+    text-align: center;
+    margin: 2.5rem 0 4.3rem 0;
 }

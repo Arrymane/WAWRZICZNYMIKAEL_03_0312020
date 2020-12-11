@@ -15,12 +15,6 @@ ul{
 li{
     padding: 0 0 12px 0;
 }
-h4{
-    color: white;
-    display: inline-block;
-    margin:0;
-    padding:0;
-}
 .function{
     display:grid;
     grid-template-columns: 1fr 90% 1fr;
@@ -31,5 +25,7 @@ h4{
     display:grid;
     background-color: $bg-secondary;
     grid-template-columns: 1fr 90% 1fr;
-    }
-
+}
+main{
+    background-color: $bg-secondary;
+}
