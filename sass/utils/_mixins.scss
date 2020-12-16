@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: 1fr 90 1fr;
 }
-
 @mixin btn{
     border-radius: 2rem;
     border:0;
@@ -23,6 +22,12 @@
 @mixin fas-icon{
     margin:0 1.5rem 0 -2rem;
 }
+@mixin heart{
+    position: absolute;
+    cursor: pointer;
+    opacity:0;
+    transform-origin: bottom;
+    }
 @mixin function-number{
     color:white;
     background-color: $primary-clr;
