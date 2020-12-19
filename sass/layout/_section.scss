@@ -132,6 +132,7 @@
 }
 .menu{
     grid-column-start: 2;
+    animation: apparition-menu ease-in 1s;
 }
 .menu__title{
     padding:  3rem 0 0.5rem;
@@ -143,16 +144,17 @@
      }
 }
 .menu__desc{
+    position: relative;
     background-color:white;
-    flex-direction: column;
-    align-content: flex-start;
     height: 70px;
-    padding: 0 0 12px 0;
+    padding: 0 0 15px 0;
     margin: 1rem 0 12px 0;
     transform-origin: top;
-    animation: apparition-menu ease-in 1s;
+    cursor: pointer;
+    overflow: hidden;
     @include function-card;
      &--title{
+         width: 100%;
          padding: 0 0 0 12px;
      }
      &--subtitle{
@@ -161,9 +163,22 @@
          padding: 0 1.5rem 0 12px; 
      }
 }
-.menu__desc:hover{
-    background-color: $tertiaire-clr;
-    width:30%;
+.menu__desc{
+    &:hover {
+    >.menu__desc--animation{
+        opacity:1;
+        transition-duration: 0.5s;
+        transform:translateX(0);  
+        .menu__desc--circle{
+            transform: rotate(-360deg);
+            transition-duration: 1s;
+            } 
+        }
+    >.menu__desc--subtitle{
+        width: 70%;
+        overflow: hidden;
+         }
+    }
 }
 .btn__menu--block{
     grid-column-start: 2;

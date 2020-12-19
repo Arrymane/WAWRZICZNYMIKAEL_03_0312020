@@ -28,6 +28,23 @@
     top: 12px;
     right: 10px; 
 }
+.menu__desc--animation{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $tertiaire-clr;
+    top:0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    border-radius: 0 1.5rem 1.5rem 0;
+    color:white;
+    font-size: 20px;
+    transform-origin: right;
+    transform:translateX(60px);
+    opacity: 0;
+}
 .btn__menu{
     width: 190px;
     grid-column-start: 2;
