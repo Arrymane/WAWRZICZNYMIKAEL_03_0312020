@@ -190,9 +190,11 @@
     cursor: pointer;
     overflow: hidden;
     @include function-card;
-    -webkit-animation: fadein 3s 2s ease-in both, top 1s linear;
-    animation: fadein 3s 2s ease-in both, top 1s linear;
-    transition: all 0.5s;
+    opacity: 0;
+    transform-origin: 0 top;
+    -webkit-animation: fadein 0.7s ease-in both, top 0.5s linear;
+    animation: fadein 0.7s ease-in both, top 0.5s linear;
+    transition: all 1s;
     -webkit-transition: all 1s;
      &--title{
          width: 100%;

@@ -8,21 +8,24 @@
 }
 @keyframes fadein{
   0% {
-    top:70px;
+    transform:translateY(100%);
     opacity: 0;
   }
   100% {
-    top:0px;
+    transform:translateY(0);
     opacity:1;
 }
 }
 @-webkit-keyframes fadein{
   0% {
-    top:70px;
+    transform:translateY(100%);
     opacity: 0;
   }
   100% {
-    top:0px;
+    transform:translateY(0);
     opacity:1;
 }
+}
+
+
 
