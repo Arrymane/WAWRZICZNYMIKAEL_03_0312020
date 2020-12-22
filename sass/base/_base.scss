@@ -18,6 +18,7 @@ li{
 .function{
     display:grid;
     grid-template-columns: 1fr 90% 1fr;
+    grid-column-start: 2;
     padding: 0 0 65px 0;
     font-size: 1rem;
 }

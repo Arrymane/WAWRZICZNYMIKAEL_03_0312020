@@ -13,11 +13,11 @@
     $secondary-clr 0%,$primary-clr 100%);
 }
 @mixin function-card{
-    grid-column-start: 2;
     align-items: center;
     width: 100%;
     border-radius: 1.5rem;
     box-shadow: 3px 3px 10px $shadow;
+    grid-column-start: 2;
 }
 @mixin fas-icon{
     margin:0 1.5rem 0 -2rem;

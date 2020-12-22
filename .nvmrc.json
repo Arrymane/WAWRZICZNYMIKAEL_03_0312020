@@ -1,0 +1,21 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:public/css/style.css --style compressed",
+    "prefix": "postcss public/css/style.css --use autoprefixer -d public/css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arrymane/WAWRZICZNYMIKAEL_3_03122020.git"
+  },
+  "author": "Mika",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/Arrymane/WAWRZICZNYMIKAEL_3_03122020/issues"
+  },
+  "homepage": "https://github.com/Arrymane/WAWRZICZNYMIKAEL_3_03122020#readme"
+}
