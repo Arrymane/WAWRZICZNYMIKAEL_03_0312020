@@ -1,3 +1,42 @@
+/******loader*******/
+.loader__page{
+    position: absolute;
+    z-index:99999;
+    top: 0;
+    right:0;
+    bottom:0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transition:visibility 3s;
+}
+.loader__page--spinner{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    border: 5px solid #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     &::after{
+        content:"";
+        position: absolute;
+        top: -5px; 
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+        border: 5px solid transparent;
+        border-radius:200px;
+        border-top-color:black;
+        border-bottom-color:$primary-clr;
+        -webkit-animation: spin 2s linear infinite;
+        }
+}
 /*****Accueil*****/
 .reservation{
     flex-direction: column;
@@ -79,9 +118,9 @@
     right: 1.5rem;
     bottom: 1.5rem;
     cursor: pointer;
-    &:active{
+    &:hover{
         opacity:1;
-        transition: opacity 2000ms;
+        transition: opacity 2s;
             &::after{
                 content:"";
                 opacity:1;
@@ -125,15 +164,14 @@
     top:2.5rem;
     right: 8%;
     font-size: 1.5rem;
-    &:active{
+    &:hover{
         opacity:1;
-        transition: opacity 1.5s;
+        transition: opacity 1s;
         }
 }
 .menu{
     grid-column-start: 2;
-    animation: apparition-menu ease-in 1s;
-}
+} 
 .menu__title{
     padding:  3rem 0 0.5rem;
     font-size: 1rem;
@@ -149,10 +187,13 @@
     height: 70px;
     padding: 0 0 15px 0;
     margin: 1rem 0 12px 0;
-    transform-origin: top;
     cursor: pointer;
     overflow: hidden;
     @include function-card;
+    -webkit-animation: fadein 3s 2s ease-in both, top 1s linear;
+    animation: fadein 3s 2s ease-in both, top 1s linear;
+    transition: all 0.5s;
+    -webkit-transition: all 1s;
      &--title{
          width: 100%;
          padding: 0 0 0 12px;
@@ -162,27 +203,26 @@
          justify-content: space-between;
          padding: 0 1.5rem 0 12px; 
      }
-}
-.menu__desc{
-    &:hover {
-    >.menu__desc--animation{
-        opacity:1;
-        transition-duration: 0.5s;
-        transform:translateX(0);  
-        .menu__desc--circle{
-            transform: rotate(-360deg);
-            transition-duration: 1s;
-            } 
+     &:hover {
+        >.menu__desc--animation{
+            visibility: visible;
+            transition: all 0.5s ease-in;
+            transform:translateX(-100%);  
+            .menu__desc--circle{
+                transform: rotate(-360deg);
+                transition-duration: 1s;
+                } 
+            }
+        >.menu__desc--subtitle{
+            width: 75%;
+            overflow: hidden;
+             }
         }
-    >.menu__desc--subtitle{
-        width: 70%;
-        overflow: hidden;
-         }
-    }
 }
 .btn__menu--block{
     grid-column-start: 2;
     text-align: center;
     margin: 2.5rem 0 4.3rem 0;
+    cursor: pointer;
 }
 

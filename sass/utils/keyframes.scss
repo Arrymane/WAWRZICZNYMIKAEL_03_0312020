@@ -1,18 +1,28 @@
-@keyframes apparition{
-        0%{
-            opacity: 0;
-          }
-        100%{
-            opacity:1;
-          }
-        }
-@keyframes check-turn{
+@-webkit-keyframes spin{
     0%{
-        transform: rotate(270deg)
-      }
-    100%{
-        transform: rotate(-180deg)
-      }
+        transform:rotate(0deg)
     }
-/*loading*/
+    100%{
+        transform:rotate(360deg)
+    }
+}
+@keyframes fadein{
+  0% {
+    top:70px;
+    opacity: 0;
+  }
+  100% {
+    top:0px;
+    opacity:1;
+}
+}
+@-webkit-keyframes fadein{
+  0% {
+    top:70px;
+    opacity: 0;
+  }
+  100% {
+    top:0px;
+    opacity:1;
+}
 
