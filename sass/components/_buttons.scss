@@ -1,14 +1,21 @@
 .btn{
-    margin: 2rem 0 3.5rem 0;
+    margin: 4rem 0 3.5rem 0;
     @include btn;
     cursor: pointer;
+    @media screen and (max-width:768px) {
+    margin: 2rem 0 3.5rem 0;   
+    }
 }
 .function__step {
     display:flex;
-    margin: 0 0 25px 0;
+    margin: 1.5rem 0 25px 0;
     padding: 1.8rem 0 1.3rem 0;
-    background-color: $bg-secondary;
+    background-color: white;
     @include function-card;
+    @media screen and (max-width:768px) {
+    background-color: $bg-secondary; 
+    margin: 0 0 25px 0;  
+    }
          &--number{
             @include function-number;
         }

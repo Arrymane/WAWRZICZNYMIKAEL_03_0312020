@@ -6,11 +6,14 @@
     border-radius: 2rem;
     border:0;
     box-shadow: 3px  3px 3px $shadow;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #ffff;
     padding: 1rem;
     background-image: radial-gradient(ellipse farthest-corner at 20px 0,
     $secondary-clr 0%,$primary-clr 100%);
+    @media screen and (max-width:768px){
+    font-size: 1rem; 
+    }
 }
 @mixin function-card{
     align-items: center;
@@ -40,6 +43,5 @@
     font-family: 'roboto',sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
-    padding: 4rem 0 2rem 1.2rem;
 }
 
