@@ -8,7 +8,7 @@ Troisième étape du parcours de formation web developpeur consistant à la cré
 
 ### Cahier des charges
 
-Un brief est fournit avec toutes les demandes et conditions de bonne réalisation du projet :
+Un brief est fourni avec toutes les demandes et conditions de bonne réalisation du projet :
 
 https://github.com/Arrymane/WAWRZICZNYMIKAEL_3_03122020/blob/main/Brief%20cr%C3%A9atif%20-%20Ohmyfood!.pdf
 
