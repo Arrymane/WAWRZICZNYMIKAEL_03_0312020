@@ -47,6 +47,11 @@ h4{
 }
 .txt{
     overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    @media screen and (max-width:320px){
+        white-space: initial;
+    } 
 }
 .reservation__search--desc{
     font-size: 1.2rem;
