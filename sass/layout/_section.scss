@@ -12,9 +12,10 @@
     justify-content: center;
     align-items: center;
     visibility: hidden;
-    transition:visibility 3s;
-    -moz-transition:visibility 3s;
-    -webkit-transition:visibility 3s;
+    opacity: 0;
+    transition:visibility 3s, opacity 3s;
+    -moz-transition:visibility 3s, opacity 3s;
+    -webkit-transition:visibility 3s, opacity 3s;
 }
 .loader__page--spinner{
     position: relative;
