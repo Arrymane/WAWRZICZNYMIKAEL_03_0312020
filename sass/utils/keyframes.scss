@@ -6,6 +6,14 @@
         transform:rotate(360deg)
     }
 }
+@-moz-keyframes spin{
+  0%{
+      -moz-transform:rotate(0deg)
+  }
+  100%{
+      -moz-transform:rotate(360deg)
+  }
+}
 @keyframes fadein{
   0% {
     transform: translateY(-50%);
